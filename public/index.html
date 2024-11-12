@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App de Lista de Itens</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container" id="auth-section">
+        <h1>Registro e Login</h1>
+        <form id="register-form">
+            <h2>Registrar</h2>
+            <input type="text" id="register-username" placeholder="Usuário" required>
+            <input type="password" id="register-password" placeholder="Senha" required>
+            <button type="submit">Registrar</button>
+        </form>
+        <form id="login-form">
+            <h2>Login</h2>
+            <input type="text" id="login-username" placeholder="Usuário" required>
+            <input type="password" id="login-password" placeholder="Senha" required>
+            <button type="submit">Entrar</button>
+        </form>
+        <!-- Botão de acesso como visitante -->
+        <button id="visitor-access">Acessar como Visitante</button>
+    </div>
+
+    <div class="container" id="app-section" style="display: none;">
+        <h1>Bem-vindo ao App</h1>
+        <button id="logout-button">Sair</button>
+        <form id="item-form">
+            <input type="text" id="item-input" placeholder="Novo Item" required>
+            <input type="text" id="category-input" placeholder="Categoria" required>
+            <button type="submit">Adicionar</button>
+        </form>
+        <select id="category-filter">
+            <option value="">Todas as Categorias</option>
+        </select>
+        <ul id="item-list"></ul>
+        <div id="recipe-section"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
